@@ -2,7 +2,7 @@ import os
 import re
 
 REGEX = "[0-9]|(zero)|(one)|(two)|(three)|(four)|(five)|(six)|(seven)|(eight)|(nine)"
-REGEX_REVERSED = "[0-9]|(zero)|(eno)|(owt)|(eerht)|(ruof)|(evif)|(xis)|(neves)|(thgie)|(enin)"
+REGEX_REVERSED = "[0-9]|(orez)|(eno)|(owt)|(eerht)|(ruof)|(evif)|(xis)|(neves)|(thgie)|(enin)"
 NUMERIC_DICTIONARY = {
     'zero': 0, 'orez': 1,
     'one': 1, 'eno': 1,
