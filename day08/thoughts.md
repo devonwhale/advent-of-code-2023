@@ -1,0 +1,1 @@
+Nice simple part 1 and I'm very happy with my solution to part 2. Definitely better than actually running the simulation
