@@ -1,0 +1,1 @@
+Nice simple one today. Always like it when I write something that is easy to adapt for the second part
