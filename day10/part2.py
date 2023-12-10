@@ -96,6 +96,7 @@ for row in range(0, max_row):
     previous_symbol = '.'
     in_loop = False
     can_be_joined = False
+    #print('New row')
     for column in range(0, max_column):
         current_position = [column, row]
         current_position_in_pipe = current_position in pipe
@@ -104,14 +105,16 @@ for row in range(0, max_row):
         #print(f'Checking {column}, {row} with symbol {current_symbol}. Current in pipe status: {current_position_in_pipe}. Current in loop status: {in_loop}')
         if current_position_in_pipe:
             if current_symbol == '-':
+                #print('-, skipping')
                 continue
-            #elif current_symbol == '|' and previous_symbol == '|':
-             #   continue
-            elif join_check(current_symbol, previous_symbol):
+            elif join_check(current_symbol, previous_symbol) and (previous_symbol != current_symbol):
+                #print('join check failed')
                 in_loop = False
             elif in_loop:
+                #print('currenting in loop, exiting')
                 in_loop = False
             else:
+                #print('currently out of loop, entering')
                 in_loop = True
         elif in_loop:
             print(f'Internal found at {column}, {row} with symbol {current_symbol}')
