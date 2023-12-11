@@ -1,0 +1,1 @@
+Much easier to wrap my head around than yesterday. Good ol' taxicab geometry!
