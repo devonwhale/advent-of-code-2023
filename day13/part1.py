@@ -1,5 +1,4 @@
 def calculate_score(mirror):
-    #print('Assessing mirror', mirror)
     for index, row in enumerate(mirror):
         adjusted_index = index + 1
         if adjusted_index == len(mirror):
@@ -16,10 +15,7 @@ def calculate_score(mirror):
                 break
         
         if valid:
-            #print('Mirror valid', left, right)
             return adjusted_index
-        #else:
-            #print('Mirror not valid', left, right)
     return -1
 
 def rotate(mirror):
@@ -56,4 +52,4 @@ for line in input:
 output += score(mirror_being_built)
 
 
-print(output) #23955 too low
+print(output)
