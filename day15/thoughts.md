@@ -1,0 +1,1 @@
+Spot of fun today. Really enjoyed that (possibly because I've come across HashMaps before)
