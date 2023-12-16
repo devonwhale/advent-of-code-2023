@@ -1,0 +1,1 @@
+Took me longer to realise than it should have that there could be an infinite loop, hence the hacky solution. Going to require a rethink when I get time to look at part 2.
